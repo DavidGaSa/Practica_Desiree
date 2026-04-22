@@ -1,0 +1,17 @@
+=== STDOUT ===
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\jgc15\Desktop\Pr-ctica_Desir-e\devops-sentinel
+plugins: anyio-4.13.0
+collected 5 items
+
+test_app.py .....                                                        [100%]
+
+============================== 5 passed in 0.63s ==============================
+
+
+=== STDERR ===
+
+
+=== RETURN CODE ===
+0

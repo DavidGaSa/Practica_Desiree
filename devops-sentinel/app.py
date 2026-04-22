@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 import logging
 
 app = FastAPI()
@@ -16,14 +16,18 @@ def home():
 @app.get("/divide")
 def divide(a: int, b: int):
     try:
-        return {"result": a / b}
+        result = a / b
+        return {"result": result}
     except Exception as e:
         logging.error(f"Error en /divide con a={a}, b={b}: {str(e)}")
-        raise e
+        raise HTTPException(status_code=500, detail="Error interno en divide")
 
 @app.get("/square")
 def square(x: int):
-    if x < 0:
-        logging.error(f"Error en /square con x={x}: valor negativo no permitido")
-        raise ValueError("No se permiten valores negativos")
-    return {"result": x * x}
+    try:
+        if x < 0:
+            raise ValueError("No se permiten valores negativos")
+        return {"result": x * x}
+    except Exception as e:
+        logging.error(f"Error en /square con x={x}: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error interno en square")

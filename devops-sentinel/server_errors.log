@@ -1,2 +1,11 @@
-2026-04-22 18:56:21,788 - ERROR - Error en /divide con a=10, b=0: division by zero
-2026-04-22 18:56:29,715 - ERROR - Error en /square con x=-3: valor negativo no permitido
+
+2026-04-22 20:33:19,172 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:16,373 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:18,393 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:20,414 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:22,455 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:24,469 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:26,484 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:28,502 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:30,590 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 20:35:32,648 - ERROR - Error en /divide con a=10, b=0: division by zero
